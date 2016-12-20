@@ -124,7 +124,7 @@ class Serbian_Transliteration {
 	 * @access protected
 	 */
 	public function latin() {
-		return str_replace( array_values( $this->combinations ), array_keys( $this->combinations ), $this->original );
+		return str_replace( array_keys( $this->combinations ), array_values( $this->combinations ), $this->original );
 	}
 
 	/**
@@ -134,7 +134,7 @@ class Serbian_Transliteration {
 	 * @access protected
 	 */
 	public function cyrillic() {
-		return str_replace( array_keys( $this->combinations ), array_values( $this->combinations ), $this->original );
+		return str_replace( array_values( $this->combinations ), array_keys( $this->combinations ), $this->original );
 	}
 }
 endif;
