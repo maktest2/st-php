@@ -11,7 +11,7 @@
 *
 * @since 1.0.0
 */
-class Tests_ST_Latin extends PHPUnit_TestCase {
+class Tests_ST_Latin extends PHPUnit_Framework_TestCase {
 	/**
 	 * Test latin inputs.
 	 *
