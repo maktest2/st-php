@@ -29,6 +29,13 @@ class Serbian_Transliteration {
 	 * @var array
 	 */
 	public $combinations = array(
+		// Digraphs must be before all other letters because of Latin to Cyrillic transliteration
+		'Љ' => 'Lj',
+		'Љ' => 'LJ',
+		'Њ' => 'Nj',
+		'Њ' => 'NJ',
+		'Џ' => 'Dž',
+		'Џ' => 'DŽ',
 		'А' => 'A',
 		'Б' => 'B',
 		'В' => 'V',
@@ -42,10 +49,8 @@ class Serbian_Transliteration {
 		'Ј' => 'J',
 		'К' => 'K',
 		'Л' => 'L',
-		'Љ' => 'Lj',
 		'М' => 'M',
 		'Н' => 'N',
-		'Њ' => 'Nj',
 		'О' => 'O',
 		'П' => 'P',
 		'Р' => 'R',
@@ -57,8 +62,10 @@ class Serbian_Transliteration {
 		'Х' => 'H',
 		'Ц' => 'C',
 		'Ч' => 'Č',
-		'Џ' => 'Dž',
 		'Ш' => 'Š',
+		'љ' => 'lj',
+		'њ' => 'nj',
+		'џ' => 'dž',
 		'а' => 'a',
 		'б' => 'b',
 		'в' => 'v',
@@ -72,10 +79,8 @@ class Serbian_Transliteration {
 		'ј' => 'j',
 		'к' => 'k',
 		'л' => 'l',
-		'љ' => 'lj',
 		'м' => 'm',
 		'н' => 'n',
-		'њ' => 'nj',
 		'о' => 'o',
 		'п' => 'p',
 		'р' => 'r',
@@ -87,7 +92,6 @@ class Serbian_Transliteration {
 		'х' => 'h',
 		'ц' => 'c',
 		'ч' => 'č',
-		'џ' => 'dž',
 		'ш' => 'š',
 	);
 
