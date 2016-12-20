@@ -52,21 +52,21 @@ class Tests_ST_Latin extends PHPUnit_Framework_TestCase {
 	 */
 	public function test_cyrillic_inputs() {
 		$keyword1 = new Serbian_Transliteration( 'лудило' );
-		$this->assertEquals( $keyword1->cyrillic(), 'ludilo' );
+		$this->assertEquals( $keyword1->latin(), 'ludilo' );
 
 		$keyword2 = new Serbian_Transliteration( 'рзава' );
-		$this->assertEquals( $keyword2->cyrillic(), 'rzava' );
+		$this->assertEquals( $keyword2->latin(), 'rzava' );
 
 		$keyword3 = new Serbian_Transliteration( 'Тврђава' );
-		$this->assertEquals( $keyword3->cyrillic(), 'Tvrđava' );
+		$this->assertEquals( $keyword3->latin(), 'Tvrđava' );
 
 		$keyword4 = new Serbian_Transliteration( 'Милијаш' );
-		$this->assertEquals( $keyword4->cyrillic(), 'Milijaš' );
+		$this->assertEquals( $keyword4->latin(), 'Milijaš' );
 
 		$keyword5 = new Serbian_Transliteration( 'врло опасно' );
-		$this->assertEquals( $keyword5->cyrillic(), 'vrlo opasno' );
+		$this->assertEquals( $keyword5->latin(), 'vrlo opasno' );
 
 		$keyword6 = new Serbian_Transliteration( 'А шта да радим?' );
-		$this->assertEquals( $keyword6->cyrillic(), 'A šta da radim?' );
+		$this->assertEquals( $keyword6->latin(), 'A šta da radim?' );
 	}
 }
