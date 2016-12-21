@@ -26,4 +26,27 @@ class Tests_ST_Basic extends PHPUnit_Framework_TestCase {
 		// Test that original is same as input
 		$this->assertEquals( $not_empty->original, 'input' );
 	}
+
+	/**
+	 * Test Serbian Cyrillic alphabet.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function test_cyrillic_alphabet() {
+		$keyword1 = new Serbian_Transliteration( 'АБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШабвгдђежзијклљмнњопрстћуфхцчџш' );
+		$this->assertEquals( $keyword1->cyrillic(), 'АБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШабвгдђежзијклљмнњопрстћуфхцчџш' );
+		$this->assertEquals( $keyword1->latin(), 'ABVGDĐEŽZIJKLLjMNNjOPRSTĆUFHCČDžŠabvgdđežzijklljmnnjoprstćufhcčdžš' );
+	}
+	/**
+	 * Test Serbian Latin alphabet.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function test_latin_alphabet() {
+		$keyword1 = new Serbian_Transliteration( 'ABVGDĐEŽZIJKLLjMNNjOPRSTĆUFHCČDžŠabvgdđežzijklljmnnjoprstćufhcčdžš' );
+		$this->assertEquals( $keyword1->cyrillic(), 'АБВГДЂЕЖЗИЈКЛЉМНЊОПРСТЋУФХЦЧЏШабвгдђежзијклљмнњопрстћуфхцчџш' );
+		$this->assertEquals( $keyword1->latin(), 'ABVGDĐEŽZIJKLLjMNNjOPRSTĆUFHCČDžŠabvgdđežzijklljmnnjoprstćufhcčdžš' );
+	}
 }
