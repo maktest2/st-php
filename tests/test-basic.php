@@ -7,7 +7,7 @@
  */
 
 /**
- * Test case for original.
+ * Test case for basics.
  *
  * @since 1.0.0
  */
