@@ -81,7 +81,7 @@ class Tests_ST_Latin extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $keyword1->latin(), 'biliJAR' );
 
 		$keyword2 = new Serbian_Transliteration( 'КuГlА' );
-		$this->assertEquals( $keyword2->latin(), 'KuGla' );
+		$this->assertEquals( $keyword2->latin(), 'KuGlA' );
 
 		$keyword3 = new Serbian_Transliteration( 'НОСiti' );
 		$this->assertEquals( $keyword3->latin(), 'NOSiti' );
