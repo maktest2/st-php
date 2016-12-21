@@ -105,7 +105,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $keyword9->cyrillic(), 'дЖамбас' );
 
 		$keyword10 = new Serbian_Transliteration( 'Njiva' );
-		$this->assertEquals( $keyword10->cyrillic(), 'Њива ' );
+		$this->assertEquals( $keyword10->cyrillic(), 'Њива' );
 
 		$keyword11 = new Serbian_Transliteration( 'NJuška' );
 		$this->assertEquals( $keyword11->cyrillic(), 'Њушка' );
