@@ -99,7 +99,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $keyword7->cyrillic(), 'Џандрљав' );
 
 		$keyword8 = new Serbian_Transliteration( 'DŽivdžan' );
-		$this->assertEquals( $keyword9->cyrillic(), 'џивџан' );
+		$this->assertEquals( $keyword8->cyrillic(), 'џивџан' );
 
 		$keyword9 = new Serbian_Transliteration( 'dŽambas' );
 		$this->assertEquals( $keyword9->cyrillic(), 'дЖамбас' );
@@ -162,7 +162,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $keyword2->cyrillic(), 'www.пример.нет' );
 
 		$keyword3 = new Serbian_Transliteration( 'Über 60 Millionen Menschen haben WordPress als Grundstein für den Ort gewählt, den sie im Web Home nennen. Wir freuen uns, dich in dieser großen Familie zu begrüßen!' );
-		$this->assertEquals( $keyword3->cyrillic(), 'Üбер 60 Миллионен Менсцхен хабен WордПресс алс Грундстеин фüр ден Орт геwäхлт, ден сие им Wеб Хоме неннен. Wир фреунен унс, дицх ин диесер гроßен Фамилие зу бегрüßен!' );
+		$this->assertEquals( $keyword3->cyrillic(), 'Üбер 60 Миллионен Менсцхен хабен WордПресс алс Грундстеин фüр ден Орт геwäхлт, ден сие им Wеб Хоме неннен. Wир фреуен унс, дицх ин диесер гроßен Фамилие зу бегрüßен!' );
 
 		$keyword4 = new Serbian_Transliteration( 'WordPress — идеальная платформа для публикации, ориентированная на красоту, поддержку стандартов и удобство использования. WordPress бесплатен и свободен к распространению.' );
 		$this->assertEquals( $keyword4->cyrillic(), 'WордПресс — идеальная платформа для публикации, ориентированная на красоту, поддержку стандартов и удобство использования. WордПресс бесплатен и свободен к распространению.' );
@@ -185,7 +185,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 	\_/ \_/\__|____/\____/\____/   \_/ \_/_|   \__| \____/ \___/|_|_|\___|\___|\__|_|\___/|_| |_|" );
 
 		$keyword8 = new Serbian_Transliteration( '`1234567890-=[]\;,./' );
-		$this->assertEquals( $keyword9->cyrillic(), '`1234567890-=[]\;,./' );
+		$this->assertEquals( $keyword8->cyrillic(), '`1234567890-=[]\;,./' );
 
 		$keyword9 = new Serbian_Transliteration( '~!@#$%^&*()_+{}|:<>?' );
 		$this->assertEquals( $keyword9->cyrillic(), '~!@#$%^&*()_+{}|:<>?' );
