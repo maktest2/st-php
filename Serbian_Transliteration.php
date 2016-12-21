@@ -212,7 +212,7 @@ class Serbian_Transliteration {
 	 * @access protected
 	 */
 	public function cyrillic() {
-		return str_replace( $this->latin ), $this->cyrillic, $this->original );
+		return str_replace( $this->latin, $this->cyrillic, $this->original );
 	}
 }
 endif;
