@@ -154,7 +154,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 	 * @since 1.0.0
 	 * @access public
 	 */
-	public function test_latin_mixed_scripts_inputs() {
+	public function test_latin_non_serbian_inputs() {
 		$keyword1 = new Serbian_Transliteration( 'XYZ' );
 		$this->assertEquals( $keyword1->cyrillic(), 'XYZ' );
 
