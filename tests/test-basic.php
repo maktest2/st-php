@@ -7,7 +7,7 @@
  */
 
 /**
- * Test case for site transients.
+ * Test case for original.
  *
  * @since 1.0.0
  */

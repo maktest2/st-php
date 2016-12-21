@@ -1,21 +1,20 @@
 <?php
 /**
- * Get all variants of word for Serbian language.
+ * Transliterate string to both scripts of Serbian language.
  *
  * @package   Serbian_Transliteration
  * @version   1.0
  * @author    Milan Dinić <blog.milandinic.com>
- * @copyright Copyright (c) 2016, Milan Dinić
- * @license   http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
+ * @license   https://unlicense.org/ Unlicense
  * @link      https://github.com/dimadin/serbian-variants
  */
 
 
 if ( ! class_exists( 'Serbian_Transliteration' ) ) :
 /**
- * The Serbian Variants Class
+ * The Serbian Transliteration Class
  *
- * Get all variants of word for Serbian language.
+ * Transliterate string to both scripts of Serbian language.
  *
  * @since 1.0.0
  */
@@ -184,7 +183,7 @@ class Serbian_Transliteration {
 	public $original;
 
 	/**
-	 * Transliterate sting to both string of Serbian language.
+	 * Constructor.
 	 *
 	 * @since 1.0.0
 	 * @access public
