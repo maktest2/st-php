@@ -96,7 +96,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 		$this->assertEquals( $keyword6->cyrillic(), 'лЈуљ' );
 
 		$keyword7 = new Serbian_Transliteration( 'Džandrljav' );
-		$this->assertEquals( $keyword7->cyrillic(), 'Џандрљав ' );
+		$this->assertEquals( $keyword7->cyrillic(), 'Џандрљав' );
 
 		$keyword8 = new Serbian_Transliteration( 'DŽivdžan' );
 		$this->assertEquals( $keyword9->cyrillic(), 'џивџан' );
@@ -124,7 +124,7 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 		$keyword1 = new Serbian_Transliteration( 'Čučavac' );
 		$this->assertEquals( $keyword1->cyrillic(), 'Чучавац' );
 
-		$keyword2 = new Serbian_Transliteration( 'Ćevabžinica' );
+		$keyword2 = new Serbian_Transliteration( 'Ćevabdžinica' );
 		$this->assertEquals( $keyword2->cyrillic(), 'Ћевабџиница' );
 
 		$keyword3 = new Serbian_Transliteration( 'Šuškavac' );
@@ -155,8 +155,8 @@ class Tests_ST_Cyrillic extends PHPUnit_Framework_TestCase {
 	 * @access public
 	 */
 	public function test_latin_non_serbian_inputs() {
-		$keyword1 = new Serbian_Transliteration( 'XYZ' );
-		$this->assertEquals( $keyword1->cyrillic(), 'XYZ' );
+		$keyword1 = new Serbian_Transliteration( 'XYQ' );
+		$this->assertEquals( $keyword1->cyrillic(), 'XYQ' );
 
 		$keyword2 = new Serbian_Transliteration( 'www.primer.net' );
 		$this->assertEquals( $keyword2->cyrillic(), 'www.пример.нет' );
